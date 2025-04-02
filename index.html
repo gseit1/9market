@@ -15,9 +15,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <!-- Updated Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-pink fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">9 Market Café</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Visit Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
 
     <!-- 🌟 Hero Section -->
-    <header class="hero">
+    <header id="hero" class="hero">
         <div class="hero-image"></div>
         <div class="hero-text">
             <h1 data-aos="fade-down">More than just coffee.</h1>
@@ -46,7 +67,7 @@
     </section>
 
     <!-- 📜 Our Story - Timeline -->
-    <section class="our-story">
+    <section id="story" class="our-story">
         <h2 data-aos="fade-up">Our Journey</h2>
         <div class="timeline">
             <div class="timeline-path"></div>
@@ -77,21 +98,32 @@
     <section id="menu" class="menu">
         <h2>Our Menu 🍽️</h2>
     
-        <!-- Menu Categories -->
-        <div class="menu-categories">
+        <!-- Category Tabs -->
+        <div class="menu-tabs">
             <button class="menu-tab active" data-category="hot-drinks">☕ Hot Drinks</button>
             <button class="menu-tab" data-category="cold-drinks">🧊 Cold Drinks</button>
+            <button class="menu-tab" data-category="brunch">🍳 Brunch</button>
             <button class="menu-tab" data-category="desserts">🍰 Desserts</button>
         </div>
     
-        <!-- Menu Grid -->
-        <div class="menu-grid" id="menu-list">
-            <!-- Menu items will be loaded dynamically with JS -->
+        <!-- Mood Filter -->
+        <div class="mood-filter">
+            <label for="mood">How are you feeling? 💭</label>
+            <select id="mood">
+                <option value="">Select Mood</option>
+                <option value="wake-up">😴 Wake Me Up</option>
+                <option value="relax">🧘‍♂️ Relaxing Vibes</option>
+                <option value="sweet">🍭 Sweet Tooth</option>
+            </select>
         </div>
+    
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menu-list"></div>
     </section>
     
+    
 
-    <section class="events">
+    <section id="events" class="events">
         <h2>Upcoming Events 🎶</h2>
         <div class="events-carousel">
             <div class="event-item">
@@ -118,6 +150,44 @@
     </section>
     
 
+
+    <!-- 🎨 Café Mood Board Section -->
+<section class="mood-board">
+    <h2 data-aos="fade-up">☕ Today’s Vibes</h2>
+    
+    <!-- 🔹 Random Mood Generator -->
+    <div class="vibe-generator">
+        <button onclick="generateVibe()">✨ Find Your Vibe</button>
+        <div id="vibe-result">
+            <h3>☕ Your Drink: <span id="drink"></span></h3>
+            <p>💬 Quote: <span id="quote"></span></p>
+            <p>🎶 Song: <span id="song"></span></p>
+        </div>
+    </div>
+
+    <!-- 🔥 Mood-Based Drink Pairings -->
+    <div class="mood-pairings">
+        <div class="mood-item" data-drink="Chamomile Tea">
+            🧘‍♂️ Chill Vibes
+        </div>
+        <div class="mood-item" data-drink="Espresso">
+            ⚡ Energy Boost
+        </div>
+        <div class="mood-item" data-drink="Pink Latte">
+            🎨 Creative Flow
+        </div>
+    </div>
+
+    <!-- 📸 Café Aesthetic Collage -->
+    <div class="collage">
+        <img src="late1.png" alt="Coffee Shop Vibe">
+        <img src="late2.png" alt="Café Quote">
+        <img src="matcha1.png" alt="Latte Art">
+        <img src="drink1.png" alt="Cozy Café">
+    </div>
+</section>
+
+
     <!-- 📸 Community & Instagram Wall -->
    
 
@@ -135,6 +205,21 @@
 
     </section>
     
+<!-- 🖼️ Café Memory Wall -->
+<section class="memory-wall">
+    <h2 data-aos="fade-up">💌 Leave a Memory</h2>
+    
+    <!-- 📝 Input Field -->
+    <div class="memory-form">
+        <input type="text" id="memory-input" placeholder="Write your coffee memory...">
+        <button onclick="addMemory()">➕ Add</button>
+    </div>
+
+    <!-- 📜 Display Memories -->
+    <div class="memory-board" id="memory-board"></div>
+</section>
+
+
     <!-- 📍 Contact & Locations -->
     <section class="contact">
         <h2 data-aos="fade-up">Visit Us</h2>
@@ -159,6 +244,8 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
