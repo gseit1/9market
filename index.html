@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Market Cafe</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 🌟 Hero Section -->
+    <header class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-text">
+            <h1 data-aos="fade-down">More than just coffee.</h1>
+            <p data-aos="fade-up">It’s an experience of taste, music, and community.</p>
+            <a href="#menu" class="btn btn-custom" data-aos="fade-up"><i class="fas fa-mug-hot"></i> See What's Brewing</a>
+        </div>
+    </header>
+
+    <!-- ⭐ Featured Experience -->
+    <section class="featured-experience">
+        <h2 data-aos="fade-up">Discover 9 Market Cafe</h2>
+        <div class="experience-grid">
+            <div class="experience-item" data-aos="fade-right">
+                <img src="drink1.png" alt="Signature Drinks">
+                <p>Signature Drinks with a Twist</p>
+            </div>
+            <div class="experience-item" data-aos="fade-left">
+                <img src="drink2.png" alt="Live Music">
+                <p>Live Music & Chill Vibes</p>
+            </div>
+            <div class="experience-item" data-aos="fade-right">
+                <img src="drink3.png" alt="Desserts">
+                <p>Handcrafted Desserts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📜 Our Story - Timeline -->
+    <section class="our-story">
+        <h2 data-aos="fade-up">Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-path"></div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h4>First Cafe Opening</h4>
+                    <p>The dream began with a small but vibrant space.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h4>Second Location</h4>
+                    <p>Bringing more people together over coffee and music.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h4>Third Store</h4>
+                    <p>Expanding the vibes to new neighborhoods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu 🍽️</h2>
+    
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+            <button class="menu-tab active" data-category="hot-drinks">☕ Hot Drinks</button>
+            <button class="menu-tab" data-category="cold-drinks">🧊 Cold Drinks</button>
+            <button class="menu-tab" data-category="desserts">🍰 Desserts</button>
+        </div>
+    
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menu-list">
+            <!-- Menu items will be loaded dynamically with JS -->
+        </div>
+    </section>
+    
+
+    <section class="events">
+        <h2>Upcoming Events 🎶</h2>
+        <div class="events-carousel">
+            <div class="event-item">
+                <img src="event1.png" alt="Live Music Night">
+                <h3>🎤 Live Music Night</h3>
+                <p>Enjoy an evening of live music with amazing artists.</p>
+                <span>📅 April 15, 2025</span>
+            </div>
+    
+            <div class="event-item">
+                <img src="event2.png" alt="Barista Workshop">
+                <h3>☕ Barista Workshop</h3>
+                <p>Learn the secrets of crafting the perfect coffee.</p>
+                <span>📅 April 22, 2025</span>
+            </div>
+    
+            <div class="event-item">
+                <img src="event3.png" alt="Art & Coffee">
+                <h3>🎨 Art & Coffee</h3>
+                <p>Discover local artists while sipping your favorite drink.</p>
+                <span>📅 April 30, 2025</span>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- 📸 Community & Instagram Wall -->
+   
+
+    <section class="community">
+        <h2  data-aos="fade-up">Our Community 💖</h2>
+        <div class="community-gallery">
+            <img src="drink1.png" alt="Community 1">
+            <img src="event1.png" alt="Community 2">
+            <img src="event2.png" alt="Community 3">
+            <img src="story.png" alt="Community 4">
+            <img src="drink3.png" alt="Community 5">
+            <img src="hero.png" alt="Community 6">
+        </div>
+        <p>Tag us @9_marketcafe to be featured!</p>
+
+    </section>
+    
+    <!-- 📍 Contact & Locations -->
+    <section class="contact">
+        <h2 data-aos="fade-up">Visit Us</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6055.375386901257!2d22.92899049357911!3d40.636768900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a83900649ba8d3%3A0xc9dc0174d4c1c9b9!2s9%20Market%20cafe!5e0!3m2!1sel!2sgr!4v1743610754998!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <p>📍 Find us at multiple locations.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 9 Market Cafe - Designed with ❤️</p>
+    </footer>
+
+    <!-- AOS Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
